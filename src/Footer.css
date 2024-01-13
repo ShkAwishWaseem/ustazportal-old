@@ -1,0 +1,35 @@
+/* .copy{
+     background-color: rgba(0, 0, 0, 0.2)
+} */
+footer {
+  background-color: #eceff1;
+}
+.bg {
+  background-color: var(--main-color);
+  /* position: relative; */
+}
+/* .bg > button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 0;
+  border-radius: 15px;
+  background: linear-gradient(
+    140deg,
+    #5fcf80 0%,
+    #65f08f 50%,
+    #4ee77c 75%
+  ) !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 16px;
+} */
+hr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+.bg > div > span{
+  text-align: center;
+}

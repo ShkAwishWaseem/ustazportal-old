@@ -1,0 +1,55 @@
+.demo_container{
+     margin-top: 90px;
+}
+.demo_container > h1 {
+     margin-bottom: 50px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 28px;
+     color: var(--main-color);
+     letter-spacing: 6px;
+}
+.form-control{
+     background-color: transparent;
+}
+.form-control:focus{
+     background-color: transparent;
+}
+.demo_img{
+     width: 100%;
+     margin-top: 70px;
+     margin-left: 40px;
+}
+.demo_container{
+     margin-top: 80px;
+}
+/* Add this to your Demo.css file */
+.demo_container {
+     margin-top: 5rem;
+   }
+   
+   .user-form {
+     padding: 2rem; /* Adjust the padding as needed */
+   }
+   
+   .demo_img {
+     width: 100%; /* Ensure the image takes full width */
+     height: auto;
+   }
+   
+   .col_demo{
+     width: 100%;
+   }
+   .form-imgs-container{
+     margin-top: 30px;
+     margin-left: 40px;
+   }
+
+
+.demo_para{
+     line-height: 2rem;
+     margin-top: 60px;
+}
+.form-text-container{
+     /* margin-top: 70px; */
+}

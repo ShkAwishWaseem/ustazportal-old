@@ -1,0 +1,17 @@
+.mt{
+     margin-top: 15%;
+}
+.span_color{
+     color: var(--main-color);
+}
+.s{
+     font-size: 18px;
+}
+.resize{
+     width: 120px;
+     height: 120px;
+}
+.main-img {
+     width: 350px;
+     height: 350px;
+}

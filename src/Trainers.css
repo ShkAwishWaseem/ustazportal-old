@@ -1,0 +1,27 @@
+.img{
+  width: 230px;
+  height: 230px;
+
+}
+.trainers {
+  margin-top: 13%;
+}
+.card {
+  border: none;
+}
+
+.user-content p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ratings i {
+  color: blue;
+}
+.user-content > h5 {
+  margin: 20px 0px;
+}
+.user-content > span{
+     font-weight: bolder;
+     color: var(--main-color);
+}

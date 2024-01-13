@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Darumadrop+One&family=Edu+NSW+ACT+Foundation&family=Konkhmer+Sleokchher&family=Lato&family=Montserrat&family=Poppins&family=Prompt&family=Roboto&family=Roboto+Condensed:ital@1&family=Sigmar&family=Ubuntu&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background-color: #eaebed;
+  overflow-x: hidden;
+}
+:root{
+  --main-color : #5fcf80;
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #74de94;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.color{
+  color: var(--main-color);
+}
+body{
+  background-color: #eaebed;
 }

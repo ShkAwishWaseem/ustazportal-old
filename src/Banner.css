@@ -1,0 +1,112 @@
+.banner {
+     position: relative;
+     height: 400px; 
+   }
+   
+   .banner video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+   .banner .content {
+     position: relative;
+     z-index: 1;
+     color: #fff;
+     text-align: center;
+     padding: 6% 20px;
+     width: 50%;
+     text-align: left;
+}
+   
+.gradient {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+     z-index: 1;
+}
+.green {
+     color: var(--main-color);
+}
+.content button {
+     outline: none;
+     padding: 6px 20px;
+     background: transparent;
+     border: 1px solid white;
+     border-radius: 20px;
+     transition: all 100ms;
+     font-size: 18px;
+     letter-spacing: 2px;
+}
+.banner .content button a{
+     text-decoration: none;
+     color: white;
+     font-size: 17px;
+}
+.banner .content button:hover{
+     background-color: var(--main-color);
+     color: white;
+}
+@media only screen and (max-width:811px){
+     .banner .content{
+          width: 80%;
+          padding: 7% 20px;
+     }
+}
+@media only screen and (max-width:375px){
+     .banner .content {
+          padding: 10% 20px;
+     }
+     .banner .content > h1{
+          font-size: 20px;
+     }
+     .banner .content > p{
+          margin: 15px 0px;
+          font: 16px;
+     }
+     .banner .content{
+          width: 100%;
+     }
+}
+
+#myBtn{
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     font-size: 18px;
+     border: none;
+     outline: none;
+     color: white;
+     cursor: pointer;
+     padding: 8px 10px;
+     border-radius: 100%;
+     background: linear-gradient(
+       140deg,
+       #5fcf80 0%,
+       #65f08f 50%,
+       #4ee77c 75%
+     ) !important;
+     font-weight: 500;
+
+     animation: move 1s alternate infinite;
+     cursor: pointer;
+     animation-timing-function: ease-in-out;
+}
+#myBtn > img{
+     width: 30px;
+}
+
+@keyframes move {
+     0%{
+          transform: translateY(-20px);
+     }
+     100%{
+          transform: translateY(0);
+     }
+}
