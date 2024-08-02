@@ -1,30 +1,31 @@
 .hover-text:hover{
-     color: var(--main-color);
+     color: var(--gold-color);
 }
 .navbar-brand{
      text-transform: uppercase;
-     color: var(--main-color);
+     color: var(--white-color);
 }
 .navbar-brand:hover {
-     color: var(--main-color);
+     color: var(--white-color);
 }
 .navbar-brand:focus{
-     color: var(--main-color) !important;
+     color: var(--white-color) !important;
 }
 .header{
      position: sticky;
      top: 0;
      z-index: 1000;
 }
-.nav-color{
+/* .nav-color{
      background-color: #383d3b;
-}
+} */
 .nav-text{
-     color: white;
+     color: var(--white-color);
 }
 .hover-text:focus{
-     color: var(--main-color) !important;
+     color: var(--gold-color)!important;
 }
+
 .navbar-toggler{
       border: 1px solid var(--main-color) !important;
      outline: none !important; 
@@ -40,4 +41,15 @@
 }
 .hamburger{
      width: 22px;
+}
+.navbar , .nav-color, .nav{
+     /* background-color: var(--white-color); */
+     background-color: var(--main-color);
+}
+.dropdown-item:hover{
+          background-color: var(--gold-color);
+}
+.dropdown-item{
+     color: var(--white-color);
+     
 }

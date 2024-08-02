@@ -1,8 +1,24 @@
 .banner {
-     position: relative;
-     height: 400px; 
+     /* position: relative; */
+     /* height: 400px;  */
+     margin-top: 120px ;
+     margin-bottom: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
    }
-   
+   .banner-heading > h1{
+     text-align: center;
+     color: var(--main-color);
+     font-size: 40px;
+}
+
+.banner-paragraph > p {
+        text-align: center;
+        width: 500px;
+          font-size: 19px;
+   }   
    .banner video {
      position: absolute;
      top: 0;
@@ -86,20 +102,15 @@
      cursor: pointer;
      padding: 8px 10px;
      border-radius: 100%;
-     background: linear-gradient(
-       140deg,
-       #5fcf80 0%,
-       #65f08f 50%,
-       #4ee77c 75%
-     ) !important;
+     background: linear-gradient(to right, #4b9f71, #42c77e);
      font-weight: 500;
-
      animation: move 1s alternate infinite;
      cursor: pointer;
      animation-timing-function: ease-in-out;
 }
 #myBtn > img{
      width: 30px;
+     color: #fff !important;
 }
 
 @keyframes move {
@@ -110,3 +121,5 @@
           transform: translateY(0);
      }
 }
+
+

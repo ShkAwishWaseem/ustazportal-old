@@ -150,7 +150,8 @@
      visibility: visible;
      animation-delay: 0.2s;
       animation-name: fadeInUp;
-     /* height: 500px; */
      margin-top: 20px;
-
+   }
+   .color_price{
+    color: var(--main-color);
    }

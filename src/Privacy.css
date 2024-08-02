@@ -1,0 +1,8 @@
+.privacy-headings > ol > li{
+     font-size: 25px;
+     margin-top: 50px;
+}
+.privacy-headings > ol > p {
+     margin-top: 12px;
+     line-height: 2rem;
+}

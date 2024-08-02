@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Darumadrop+One&family=Edu+NSW+ACT+Foundation&family=Konkhmer+Sleokchher&family=Lato&family=Montserrat&family=Poppins&family=Prompt&family=Roboto&family=Roboto+Condensed:ital@1&family=Sigmar&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap');
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,7 +8,10 @@ body {
   overflow-x: hidden;
 }
 :root{
-  --main-color : #5fcf80;
+  /* --main-color : #5fcf80; */
+  --main-color : #38664d;
+  --white-color: #eaebed;
+  --gold-color : rgb(228, 205, 78);
 }
 
 ::-webkit-scrollbar {
@@ -24,22 +28,55 @@ body {
   background: var(--main-color);
 }
 
-
-::-webkit-scrollbar-thumb:hover {
-  background: #74de94;
-}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Baskervville', serif;
 }
 .color{
   color: var(--main-color);
 }
-body{
-  background-color: #eaebed;
+.main-btn{
+  padding: 8px 10px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  width: 120px; 
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main-btn:hover{
+  background-color: #4b9f71;
+  width: 200px;
+  text-align: left;
+  
+}
+.main-btn{
+  outline: none;
+  border: 0px;
+  width: 140px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to right, #4b9f71, #42c77e);
+}
+.main-btn img{
+  width: 30px;
+  display: none;
+}
+.main-btn:hover img{
+  display: block;
+}
+.main-btn:hover{
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
 }

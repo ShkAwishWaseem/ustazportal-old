@@ -6,12 +6,12 @@ import "./Demo.css"
 const SuccessComponent = () => {
   return (
     <div className="alert alert-success mt-3 sticky-top mt-0" role="alert">
-      Form submitted successfully!
+      Enrollment Successful! We will email you soon.
     </div>
   );
 };
 
-const UserForm = () => {
+const Enrollment = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [age, setAge] = useState('');
@@ -29,7 +29,7 @@ const UserForm = () => {
 
     // Get a reference to the 'users' node in Firebase Realtime Database
     const db = getDatabase(app);
-    const usersRef = ref(db, 'users');
+    const usersRef = ref(db, 'enrollment');
 
     // Push user data to the database
     push(usersRef, {
@@ -70,8 +70,8 @@ const UserForm = () => {
       {showSuccess && <SuccessComponent />}
     <div className='container mt-5'>
       <div className='container mt-5'>
-<h1 className='text-center color fw-bold '>Request a Free Demo</h1>
-<p className='paragraph text-center'>Are you curious about what our learning experience feels like? Dive into our world with a free demo that gives you a taste of what's waiting for you.</p>
+<h1 className='text-center color fw-bold '>Enroll now </h1>
+<p className='paragraph fw-bold text-center'>Are you curious about what our learning experience feels like? Dive into our world with a free demo that gives you a taste of what's waiting for you.</p>
 
 <div className="container d-flex justify-content-center align-items-center demo_container">
 <div className="row col_demo">
@@ -163,21 +163,18 @@ required
 </select>
 </div>
 <button type="submit" className="btn card_btn">
-Submit
+Enroll now
 </button>
 </form>
 </div>
 <div className="col-md-6 form-text-container">
 <div className="form-imgs-container">
-<h1 className='color demo_heading'>Why Try Our Free Demo?</h1>
-<h1 className='demo_color demo_heading_try mt-4'>Personalized Learning</h1>
-<p className='demo_para'>Discover personalized, engaging courses tailored to your unique learning style. Experience education firsthand..</p>
-<h1 className='demo_color demo_heading_try'>Meet Our Teachers</h1>
-<p className='demo_para'>Meet skilled instructors in our demo—experts who make learning enjoyable and effective.</p>
-<h1 className='demo_color demo_heading_try'>See Course Highlights</h1>
-<p className='demo_para'>Get a sneak peek into our courses, exploring exciting subjects and materials.</p>
-<h1 className='demo_color demo_heading_try'>Try Our Tools</h1>
-<p className='demo_para'>Experience interactive tools, from live sessions to multimedia resources, in our engaging demo.</p>
+<h1 className='color demo_heading'>Enrollment : </h1>
+<p className='demo_para_try'>Getting started on our website is easy! Here's how to enroll in a course:</p>
+<h3 className='demo_sub_heading_try text-decoration-none'>
+
+     Just fill the form which is very straight forward and we will email you about your course deatils and prices. For more queries contact us freely 😊
+</h3>
 </div>
 </div>
 </div>
@@ -189,4 +186,4 @@ Submit
   );
 };
 
-export default UserForm;
+export default Enrollment;

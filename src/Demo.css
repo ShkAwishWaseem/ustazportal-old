@@ -23,17 +23,16 @@
 .demo_container{
      margin-top: 80px;
 }
-/* Add this to your Demo.css file */
 .demo_container {
      margin-top: 5rem;
    }
    
    .user-form {
-     padding: 2rem; /* Adjust the padding as needed */
+     padding: 2rem;
    }
    
    .demo_img {
-     width: 100%; /* Ensure the image takes full width */
+     width: 100%; 
      height: auto;
    }
    
@@ -48,8 +47,41 @@
 
 .demo_para{
      line-height: 2rem;
-     margin-top: 60px;
+     margin-top: 13px;
 }
-.form-text-container{
-     /* margin-top: 70px; */
+.demo_heading_try{
+     font-size: 22px;
+     font-weight: bold;
+     text-decoration:  underline;
+}
+.demo_heading{
+     font-size: 30px;
+     font-weight: bold;
+
+}
+@media only screen and (max-width:375px){
+          .demo_heading_try{
+               font-size: 20px;
+          }
+          .demo_para{
+               font-size: 14px;
+          }
+          .form-text-container{
+               padding: 0px;
+          }
+          .demo_heading {
+               font-size: 24px;               
+          }
+}
+.demo_sub_heading_try{
+     font-size: 20px;
+     line-height: 2rem;
+     font-weight: normal;
+
+}
+.demo_para_try{
+     font-size: 16px;
+     font-weight: 600;
+     margin-top: 27px;
+     line-height: 1.6rem;
 }

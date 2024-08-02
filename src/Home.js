@@ -1,22 +1,23 @@
-import React  , {useEffect}from 'react'
-import Choose from './Choose'
-import Cards from './Cards'
-import Courses from './Courses'
-import Teachers from './Teachers'
+import React , {useEffect}from 'react'
+import Choose from "./Choose"
+import Courses from "./Courses"
+import Faqs from "./Faqs"
+import Teachers from "./Teachers"
 
-function Home() {
-  useEffect(() => {
+
+const Home = () => {
+    useEffect(() => {
     window.scrollTo(0, 0)
-  })
+  }, [])
   return (
-    <>
+    <div>
       <Choose/>
-      {/* <Cards/> */}
       <Courses/>
-      <Teachers/>
-      {/* <Crousal/> */}
-    </>
+      {/* <Teachers/> */}
+      <Faqs/>
+    </div>
   )
 }
 
 export default Home
+

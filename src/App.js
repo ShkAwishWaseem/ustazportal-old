@@ -10,7 +10,11 @@ import Highlights from './Highlights'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Trainers from './Trainers'
 import Price from './Price'
-import Test from './Test'
+import Enrollment from './Enrollment'
+import Policy from './Policy'
+import Privacy from './Privacy'
+import Faqs from './Faqs'
+import Refund from './Refund'
 
 
 
@@ -29,7 +33,12 @@ function App() {
           <Route exact path='/course' element={<Highlights/>}/>
           <Route exact path='/demo' element={<Demo/>}/>
           <Route exact path='/price' element={<Price/>}/>
-          <Route exact path='/test' element={<Test/>}/>
+          <Route exact path='/enroll' element={<Enrollment/>}/>
+          <Route exact path='/policy' element={<Policy/>}/>
+          <Route exact path='/privacy' element={<Privacy/>}/>
+          <Route exact path='/faqs' element={<Faqs/>}/>
+          <Route exact path='/refund' element={<Refund/>}/>
+          {/* <Route exact path='/test' element={<Test/>}/> */}
       </Routes>
       <Footer/>
       </Router>
